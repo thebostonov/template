@@ -1,0 +1,138 @@
+/* GENERAL CSS */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* MAIN CSS */
+.main {
+  flex-grow: 1;
+}
+.user {
+  display: inline-block;
+}
+.user__avatar-wrapper {
+  display: flex;
+  align-items: center;
+}
+.user__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #1c1d1f;
+  color: #fff;
+}
+.user__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.user__name {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.user__email {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: dimgray;
+}
+.avatar__little {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  cursor: pointer;
+}
+.avatar__center {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.avatar__little-text {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.user__list {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e5e5e5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.user__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 7px 15px;
+  background-color: #fff;
+}
+.user__item-hover {
+  padding: 0px;
+}
+.user__item-hover:hover {
+  background-color: #9cc060;
+  cursor: pointer;
+}
+.user__item:nth-child(1) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.user__link {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+.user__exit-icon {
+  padding: 10px 0px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.user__exit {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 7px 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+.user__exit:hover {
+  color: #fff;
+}
+.user-open .user__list {
+  display: flex;
+}

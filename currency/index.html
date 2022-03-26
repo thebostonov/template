@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="currency-wrapper">
+        <div class="usd-wrapper">
+          <div class="usd-info">
+            <img
+              src="./images/dollar-symbol.svg"
+              alt="USD SYMBOL"
+              width="16"
+              height="18"
+            />
+            <p class="usd-desc">
+              11483.91
+              <!-- <c:out
+                value="${globalParams.getCurrencyUsd().get(0).getCurrencyRate()}"
+              /> -->
+            </p>
+            <div class="usd-grown">
+              <!-- <img
+                class="usd-strelka plus"
+                src="./images/green-strelka.svg"
+                alt="Strelka"
+                width="12"
+                height="7"
+              /> -->
+              <img
+                class="usd-strelka minus"
+                src="./images/red-strelka.svg"
+                alt="Strelka"
+                width="12"
+                height="7"
+              />
+              <p class="usd-grown-desc differ1 red-date">
+                -25.68
+                <!-- <c:out
+                  value="${globalParams.getCurrencyUsd().get(0).getCurrencyRateChange() }"
+                /> -->
+              </p>
+            </div>
+          </div>
+          <img
+            class="d-inline-block down-img animate__animated animate__fast"
+            src="./images/down-icon.svg"
+            alt="Down Icon"
+            width="15"
+            height="8"
+          />
+        </div>
+        <div class="currency animate__animated">
+          <div class="currency__top">
+            <span class="currency__text">Valyuta</span>
+            <span class="currency__text">MB UZ kursi</span>
+          </div>
+          <ul class="currency__list">
+            <li class="currency__item">
+              <a href="#" class="currency__link">
+                <div class="currency__info">
+                  <div class="currency__info-wrapper">
+                    <span class="currency__country-flag um-flag"></span>
+                    <span class="currency__text">USD</span>
+                  </div>
+                  <span class="currency__text">
+                    11483.91
+                    <!-- <c:out value="${globalParams.getUsdCourse()}" /> -->
+                  </span>
+                  <span class="currency__text differ2 red-date">
+                    -25.68
+                    <!-- <c:out value="${globalParams.getUsdDifferenceCourse() }"/> -->
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="currency__item">
+              <a href="#" class="currency__link">
+                <div class="currency__info">
+                  <div class="currency__info-wrapper">
+                    <span class="currency__country-flag ru-flag"></span>
+                    <span class="currency__text">RUB</span>
+                  </div>
+                  <span class="currency__text">
+                    118.85
+                    <!-- <c:out value="${globalParams.getRoubleCourse()}" /> -->
+                  </span>
+                  <span class="currency__text differ3 green-date">
+                    +5.46
+                    <!-- <c:out value="${globalParams.getRoubleDifferenceCourse() }"/> -->
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="currency__item">
+              <a href="#" class="currency__link">
+                <div class="currency__info">
+                  <div class="currency__info-wrapper">
+                    <span class="currency__country-flag eur-flag"></span>
+                    <span class="currency__text">EUR</span>
+                  </div>
+                  <span class="currency__text">
+                    12618.52
+                    <!-- <c:out value="${globalParams.getEuroCourse()}" /> -->
+                  </span>
+                  <span class="currency__text differ4 red-date">
+                    -107.63
+                    <!-- <c:out value="${globalParams.getEuroDifferenceCourse()}" /> -->
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="currency__item">
+              <a href="#" class="currency__link">
+                <div class="currency__info">
+                  <div class="currency__info-wrapper">
+                    <span class="currency__country-flag tr-flag"></span>
+                    <span class="currency__text">TRY</span>
+                  </div>
+                  <span class="currency__text">
+                    141.0
+                    <!-- <c:out value="${globalParams.getTurkishLiraCourse()}" /> -->
+                  </span>
+                  <span class="currency__text differ5 green-date">
+                    0
+                    <!-- <c:out
+                      value="${globalParams.getTurkishLiraDifferenceCourse()}"
+                  /> -->
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

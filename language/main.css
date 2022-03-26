@@ -1,0 +1,62 @@
+/* GENERAL CSS */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* MAIN CSS */
+.main {
+  flex-grow: 1;
+}
+/* LANGUAGES LIST */
+.lang-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.lang-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.lang-item + .lang-item {
+  margin-left: 10px;
+}
+.lang-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lang-link:active {
+  opacity: 0.7;
+}
+.lang-desc {
+  display: inline-block;
+  font-family: Montserrat-Bold, serif;
+  font-size: 10px;
+  color: #0c0c0c;
+}

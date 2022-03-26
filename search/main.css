@@ -1,0 +1,107 @@
+/* GENERAL CSS */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* MAIN CSS */
+.main {
+  flex-grow: 1;
+}
+.search-box {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+#searchBar {
+  width: 100%;
+  font-family: "Montserrat-SemiBold", serif;
+  font-size: 12px;
+  color: #000000;
+  margin: 5px;
+}
+#searchBar:focus {
+  outline: none !important;
+  border-color: #9cc060;
+  box-shadow: 0 0 10px #9cc060;
+}
+#searchBar::placeholder {
+  font-style: normal;
+  font-family: "Montserrat-SemiBold", serif;
+  font-size: 12px;
+  color: #000000;
+}
+.item {
+  width: 100%;
+  margin: 0px 3px;
+}
+
+.search-box #listAll {
+  width: 100%;
+  max-height: 348px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  padding: 0px 5px;
+  position: absolute;
+  z-index: 1111111;
+  overflow: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+#listAll::-webkit-scrollbar {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.search-box #listAll .item .link {
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat-SemiBold", serif;
+  /* font-size: 12px; */
+  margin: 3px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  color: #000;
+}
+.search-box #listAll .item .link:hover {
+  color: #fff;
+  background: #9cc060;
+}
+.search-box #listAll .item .link:hover::after {
+  opacity: 0;
+  visibility: hidden;
+}
